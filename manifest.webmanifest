@@ -1,0 +1,13 @@
+{
+  "name": "Herkes İçin Eğitim",
+  "short_name": "öğren.",
+  "lang": "tr",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaff",
+  "theme_color": "#6258f5",
+  "description": "Ücretsiz ve herkes için öğrenme platformu.",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

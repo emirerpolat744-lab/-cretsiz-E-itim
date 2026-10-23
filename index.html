@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6258f5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="öğren.">
+  <meta name="description" content="Herkes İçin Eğitim — ücretsiz öğren, keşfet ve kendini geliştir.">
+  <title>öğren. — Herkes İçin Eğitim</title>
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-safe"></div>
+  <header class="app-header">
+    <a class="brand" href="#home"><span class="brand-logo">✦</span><span>öğren<span class="dot">.</span></span></a>
+    <button id="profileButton" class="profile-button" aria-label="Öğrenme ilerlemesi">🌟</button>
+  </header>
+
+  <main>
+    <section class="welcome" id="home">
+      <div class="welcome-label"><span class="live-dot"></span> ÖĞRENME YOLCULUĞUN BAŞLIYOR</div>
+      <h1>Merak et.<br><span>Keşfet. Öğren.</span></h1>
+      <p>Her gün yeni bir şey öğren. Küçük adımlar, büyük değişimler yaratır.</p>
+      <a href="#courses" class="primary-button">Dersleri keşfet <span>→</span></a>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-circle circle-a"></div><div class="hero-circle circle-b"></div>
+        <div class="floating-chip chip-left">💡 Yeni fikirler</div>
+        <div class="floating-chip chip-right">📚 Ücretsiz öğren</div>
+        <div class="open-book"><div class="book-left"><b>öğren.</b><i></i><i></i><i></i></div><div class="book-right"><span>✦</span><i></i></div><div class="book-line"></div></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span>
+      </div>
+      <div class="mini-stats"><div><b>06</b><span>Öğrenme alanı</span></div><div><b>Ücretsiz</b><span>Bilgiye erişim</span></div><div><b>Her yerde</b><span>Kendi hızında</span></div></div>
+    </section>
+
+    <section class="courses section-pad" id="courses">
+      <div class="section-top"><div><span class="eyebrow">SENİN İÇİN SEÇTİK</span><h2>Ne öğrenmek<br>isters <span>in?</span></h2></div><span class="count-pill" id="resultCount">6 ders</span></div>
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Ders ara..." aria-label="Ders ara"><button id="clearSearch" aria-label="Aramayı temizle" hidden>×</button></label>
+      <div class="category-list" id="categoryList">
+        <button class="category active" data-category="Tümü">✨ Tümü</button>
+        <button class="category" data-category="Teknoloji">💻 Teknoloji</button>
+        <button class="category" data-category="Bilim">🔭 Bilim</button>
+        <button class="category" data-category="Yaşam">🌱 Yaşam</button>
+      </div>
+      <div class="course-list" id="courseList">
+        <article class="course-card" data-category="Teknoloji" data-title="Kodlamaya İlk Adım" data-search="kodlama programlama html web teknoloji">
+          <div class="course-art purple-art"><span>⌨️</span><b>&lt;/&gt;</b></div><div class="course-info"><div class="course-tag">TEKNOLOJİ <span>· 15 dk</span></div><h3>Kodlamaya İlk Adım</h3><p>Kendi dijital fikirlerini üretmeye başla.</p><button class="open-lesson" data-lesson="Kodlamaya İlk Adım">Derse başla <span>↗</span></button></div>
+        </article>
+        <article class="course-card" data-category="Bilim" data-title="Uzayın Gizemleri" data-search="uzay astronomi gezegen yıldız bilim">
+          <div class="course-art space-art"><span>🪐</span><b>✦</b></div><div class="course-info"><div class="course-tag">BİLİM <span>· 12 dk</span></div><h3>Uzayın Gizemleri</h3><p>Gezegenleri ve evrenin büyüklüğünü keşfet.</p><button class="open-lesson" data-lesson="Uzayın Gizemleri">Derse başla <span>↗</span></button></div>
+        </article>
+        <article class="course-card" data-category="Yaşam" data-title="Gezegenimize İyi Bakalım" data-search="çevre doğa sürdürülebilirlik geri dönüşüm">
+          <div class="course-art green-art"><span>🌱</span><b>❋</b></div><div class="course-info"><div class="course-tag">YAŞAM <span>· 10 dk</span></div><h3>Gezegenimize İyi Bakalım</h3><p>Çevre dostu alışkanlıklarla fark yarat.</p><button class="open-lesson" data-lesson="Gezegenimize İyi Bakalım">Derse başla <span>↗</span></button></div>
+        </article>
+        <article class="course-card" data-category="Teknoloji" data-title="Dijital Dünyada Güvenlik" data-search="internet dijital güvenlik şifre parola">
+          <div class="course-art blue-art"><span>🛡️</span><b>✦</b></div><div class="course-info"><div class="course-tag">TEKNOLOJİ <span>· 8 dk</span></div><h3>Dijital Dünyada Güvenlik</h3><p>Kişisel bilgilerini internette korumayı öğren.</p><button class="open-lesson" data-lesson="Dijital Dünyada Güvenlik">Derse başla <span>↗</span></button></div>
+        </article>
+        <article class="course-card" data-category="Bilim" data-title="Matematiği Keşfet" data-search="matematik problem sayı hesap">
+          <div class="course-art orange-art"><span>➗</span><b>π</b></div><div class="course-info"><div class="course-tag">BİLİM <span>· 10 dk</span></div><h3>Matematiği Keşfet</h3><p>Matematiğin günlük hayattaki eğlenceli yönünü gör.</p><button class="open-lesson" data-lesson="Matematiği Keşfet">Derse başla <span>↗</span></button></div>
+        </article>
+        <article class="course-card" data-category="Yaşam" data-title="Empati ve İletişim" data-search="empati iletişim dinleme saygı">
+          <div class="course-art pink-art"><span>💬</span><b>♡</b></div><div class="course-info"><div class="course-tag">YAŞAM <span>· 7 dk</span></div><h3>Empati ve İletişim</h3><p>Dinlemeyi ve farklı bakış açılarını anlamayı geliştir.</p><button class="open-lesson" data-lesson="Empati ve İletişim">Derse başla <span>↗</span></button></div>
+        </article>
+      </div>
+      <div id="emptyState" class="empty-state" hidden><span>🔎</span><h3>Ders bulamadık</h3><p>Başka bir kelime denemeyi unutma.</p></div>
+    </section>
+
+    <section class="progress-section section-pad" id="progress">
+      <div class="progress-card"><div class="progress-icon">🏆</div><span class="eyebrow">İLERLEMEN</span><h2>Her adımın<br><span>değerli.</span></h2><p>Bir dersi tamamla, öğrenme yolculuğunda ilerle.</p><div class="progress-numbers"><strong id="doneCount">0</strong><span>/ 6 ders tamamlandı</span></div><div class="progress-track"><div id="progressBar"></div></div><div class="progress-foot"><span id="progressText">İlk dersini seç!</span><span>🌟</span></div><button id="resetProgress" class="reset-button">İlerlemeyi sıfırla</button></div>
+    </section>
+
+    <section class="about section-pad" id="about"><div class="about-icon">💜</div><span class="eyebrow">PROJENİN AMACI</span><h2>Eğitim herkesin<br><span>hakkı.</span></h2><p>Herkes İçin Eğitim, bilgiye erişimi kolaylaştırmak için hazırlanmış örnek bir eğitim platformudur. Ücretsiz ve anlaşılır öğrenme içerikleriyle merakı desteklemeyi hedefler.</p><div class="value-row"><span>🌍</span><div><b>Herkes için erişim</b><small>Telefonunda, tabletinde veya bilgisayarında.</small></div></div><div class="value-row"><span>✨</span><div><b>Merakla öğren</b><small>İlgini çeken konuyu seç ve keşfet.</small></div></div></section>
+    <footer><a class="brand" href="#home"><span class="brand-logo">✦</span><span>öğren<span class="dot">.</span></span></a><p>Merakla başlar, bilgiyle büyür. 💜</p><small>© <span id="year"></span> Herkes İçin Eğitim · Kodlama Haftası</small></footer>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Alt menü"><a class="selected" href="#home"><span>⌂</span><small>Ana Sayfa</small></a><a href="#courses"><span>▦</span><small>Dersler</small></a><a href="#progress"><span>◴</span><small>İlerlemem</small></a><a href="#about"><span>♡</span><small>Hakkımızda</small></a></nav>
+
+  <div class="modal-backdrop" id="lessonModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="close-modal" id="closeModal" aria-label="Kapat">×</button><div class="modal-icon" id="modalIcon">✦</div><span class="eyebrow" id="modalCategory">DERS NOTU</span><h2 id="modalTitle">Ders başlığı</h2><p id="modalDescription"></p><div class="tip"><b>💡 Aklında kalsın</b><p id="modalTip"></p></div><button class="primary-button full-button" id="completeButton">Dersi tamamladım ✓</button><small class="modal-foot">Kısa bir başlangıç notu. Konuyu güvenilir kaynaklarla daha ayrıntılı keşfedebilirsin.</small></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
